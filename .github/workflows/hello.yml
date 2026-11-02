@@ -6,9 +6,3 @@ jobs:
     steps:
       - name: print a greeting
         run: echo "Hello from github actions"
-
-      - name: show data
-        run: date
-
-      - name: list files
-        run: ls -alh
