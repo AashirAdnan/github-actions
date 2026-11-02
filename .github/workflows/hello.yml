@@ -6,3 +6,12 @@ jobs:
     steps:
       - name: print a greeting
         run: echo "Hello from github actions"
+      - name: show date
+        run: date
+
+      - name: make a folder and 2 files and then list the files
+        run: |
+          mkdir test
+          cd test
+          touch test1.txt test2.txt
+          ls -alh
