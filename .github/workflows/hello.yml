@@ -1,4 +1,4 @@
-name: only running on main
+name: CI
 
 on:
   push:
