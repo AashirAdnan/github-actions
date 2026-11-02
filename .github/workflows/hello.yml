@@ -1,13 +1,13 @@
-name: saying hello
-on: push
+name: only running on main
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  say-hello:
+  saying-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: run the ls commmand before CHECKOUT
-        run: ls -alh
-
-      - uses: actions/checkout@v4
-
-      - name: run the ls command after CHECKOUT
-        run: ls -alh
+      - name: say hello
+        run: echo "hello from aashir"
